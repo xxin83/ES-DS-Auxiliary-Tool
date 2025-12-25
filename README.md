@@ -25,3 +25,34 @@
 ├── interface_loader.py       # 插件自动注册与加载机制
 ├── config_settings_plugin.py  # [插件] 基础路径与全局设置管理
 └── systems_editor_plugin.py  # [插件] es_systems.xml 可视化编辑器
+📦 安装与运行
+环境准备： 确保您的系统已安装 Python 3.8 或以上版本。
+
+安装依赖：
+
+Bash
+
+pip install customtkinter
+启动程序：
+
+Bash
+
+python window_shell.py
+🧩 插件开发
+您可以快速开发并集成自己的功能模块：
+
+创建新 Python 文件并继承 BaseInterface。
+
+实现必要的方法：get_title() (显示名称), get_order() (排序), create_ui() (界面逻辑)。
+
+在文件末尾调用 register_interface 即可自动出现在主程序的导航栏中。
+
+📝 开发规范
+界面语言：UI 提示及交互均使用中文。
+
+版本控制：版本号遵循 0.0.x 格式，日常调整仅修改最后一位数字。
+
+代码风格：保持代码简洁，避免增加不必要的冗余注释。
+
+⚖️ 许可
+MIT License
